@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Popular Movie</string>
+    <string name="preferenceKeySortBy">PreferenceKeySort</string>
+
+    <string name="by_rating">By Rating</string>
+    <string name="view_favourites">Favourites</string>
+    <string name="by_popularity">By Popularity</string>
+
+    <string-array name="preferenceSortByEntity">
+        <item>@string/by_popularity</item>
+        <item>@string/by_rating</item>
+        <item>@string/view_favourites</item>
+    </string-array>
+
+    <string-array name="preferenceSortByEntityValue">
+        <item>@string/prefSortDefaultValue</item>
+        <item>@string/by_rating</item>
+        <item>@string/view_favourites</item>
+    </string-array>
+
+    <string-array name="Months">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>Aug</item>
+        <item>Sept</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+
+M    <string name="SortPreferenceTitle">Sort Movies</string>
+
+    <string name="prefSortDefaultValue">By Popularity</string>
+    <string name="trailerError">Failed to load Trailer&#8230;\nCheck Your Internet Connection</string>
+    <string name="reviewError">Failed to load Review&#8230;Check Your Internet Connection</string>
+    <string name="trailerNotAvailable">No Video Available&#8230;</string>
+    <string name="reviewNotAvailable">No Review Available&#8230;</string>
+    <string name="addToFavrtMsg">Added to Favourite!</string>
+    <string name="removeFromFvrtMsg">Removed From Favourite!</string>
+    <string name="plotLabel"><u>Synopsis</u></string>
+    <string name="TrailerLabel"><i>Related Videos</i></string>
+    <string name="ReviewFooter"><i><b>Click Here to View in Browser</b></i></string>
+    <string name="NetworkError">Not Connected to Internet</string>
+    <string name="SettingActivity">Settings</string>
+    <string name="MovieDetailActivity">Movie Detail</string>
+    <string name="MovieReviewActivity">Movie Review</string>
+
+    <string name="MoviePosterContent">Movie Poster</string>
+    <string name="favouriteButton">Favourite Button</string>
+
+    <string name="NextButton">NEXT</string>
+    <string name="ReviewButton">REVIEW</string>
+
+    <string name="VideoPlayButton">Play Movie Video</string>
+    <string name="ShareButton">Share Video URL</string>
+
+
+</resources>

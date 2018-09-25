@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <android.support.constraint.ConstraintLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/imageViewMoviePoster"
+            android:layout_width="113dp"
+            android:layout_height="148dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/dummy_poster"
+            android:contentDescription="@string/MoviePosterContent"/>
+
+        <TextView
+            android:id="@+id/textViewMovieName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:paddingEnd="5dp"
+            android:paddingRight="5dp"
+            android:gravity="start"
+            android:textAlignment="viewStart"
+            android:scrollHorizontally="false"
+            app:layout_constraintStart_toEndOf="@+id/imageViewMoviePoster"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="MovieName"
+            style="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+        <TextView
+            android:id="@+id/textViewReleaseData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Release Date"
+            app:layout_constraintStart_toStartOf="@+id/textViewMovieName"
+            app:layout_constraintTop_toBottomOf="@+id/textViewMovieName" />
+
+        <TextView
+            android:id="@+id/textViewMovieRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="8.8/10"
+            app:layout_constraintStart_toStartOf="@+id/textViewReleaseData"
+            app:layout_constraintTop_toBottomOf="@+id/textViewReleaseData"
+            style="@style/Base.TextAppearance.AppCompat.Large"/>
+
+        <ImageView
+            android:id="@+id/imageViewFavourite"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintEnd_toEndOf="@+id/textViewMovieRating"
+            app:layout_constraintStart_toStartOf="@+id/textViewMovieRating"
+            app:layout_constraintTop_toBottomOf="@+id/textViewMovieRating"
+            android:background="@drawable/ic_favrtheart"
+            android:contentDescription="@string/favouriteButton"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</layout>
